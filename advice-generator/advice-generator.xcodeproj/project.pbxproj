@@ -14,6 +14,10 @@
 		368091C228B3A6DA0004287C /* advice_generatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368091C128B3A6DA0004287C /* advice_generatorTests.swift */; };
 		368091CC28B3A6DB0004287C /* advice_generatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368091CB28B3A6DB0004287C /* advice_generatorUITests.swift */; };
 		368091CE28B3A6DB0004287C /* advice_generatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368091CD28B3A6DB0004287C /* advice_generatorUITestsLaunchTests.swift */; };
+		368091DF28B3A8080004287C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368091DE28B3A8080004287C /* API.swift */; };
+		368091E128B3AA5D0004287C /* AdviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368091E028B3AA5D0004287C /* AdviceModel.swift */; };
+		368091E328B3AC730004287C /* AdviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368091E228B3AC730004287C /* AdviceController.swift */; };
+		368091E528B3B3110004287C /* AdviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368091E428B3B3110004287C /* AdviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		368091C728B3A6DB0004287C /* advice-generatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "advice-generatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		368091CB28B3A6DB0004287C /* advice_generatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = advice_generatorUITests.swift; sourceTree = "<group>"; };
 		368091CD28B3A6DB0004287C /* advice_generatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = advice_generatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		368091DE28B3A8080004287C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		368091E028B3AA5D0004287C /* AdviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceModel.swift; sourceTree = "<group>"; };
+		368091E228B3AC730004287C /* AdviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceController.swift; sourceTree = "<group>"; };
+		368091E428B3B3110004287C /* AdviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,11 @@
 		368091AF28B3A6D80004287C /* advice-generator */ = {
 			isa = PBXGroup;
 			children = (
+				368091DD28B3A7C90004287C /* Model */,
+				368091DC28B3A7C30004287C /* View */,
+				368091DB28B3A7B70004287C /* Controller */,
+				368091DA28B3A76A0004287C /* Service */,
 				368091B028B3A6D80004287C /* advice_generatorApp.swift */,
-				368091B228B3A6D80004287C /* ContentView.swift */,
 				368091B428B3A6DA0004287C /* Assets.xcassets */,
 				368091B628B3A6DA0004287C /* Preview Content */,
 			);
@@ -125,6 +136,39 @@
 				368091CD28B3A6DB0004287C /* advice_generatorUITestsLaunchTests.swift */,
 			);
 			path = "advice-generatorUITests";
+			sourceTree = "<group>";
+		};
+		368091DA28B3A76A0004287C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				368091DE28B3A8080004287C /* API.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		368091DB28B3A7B70004287C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				368091E228B3AC730004287C /* AdviceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		368091DC28B3A7C30004287C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				368091B228B3A6D80004287C /* ContentView.swift */,
+				368091E428B3B3110004287C /* AdviceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		368091DD28B3A7C90004287C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				368091E028B3AA5D0004287C /* AdviceModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				368091B328B3A6D80004287C /* ContentView.swift in Sources */,
+				368091E128B3AA5D0004287C /* AdviceModel.swift in Sources */,
+				368091E528B3B3110004287C /* AdviceView.swift in Sources */,
+				368091DF28B3A8080004287C /* API.swift in Sources */,
+				368091E328B3AC730004287C /* AdviceController.swift in Sources */,
 				368091B128B3A6D80004287C /* advice_generatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import SwiftUI
 struct advice_generatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AdviceView()
         }
     }
 }
